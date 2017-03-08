@@ -14,6 +14,13 @@ html_content = r.text
 # Convert the html content into a beautiful soup object
 soup = BeautifulSoup(html_content, 'html5lib')
 
-# View the title tag of the soup object
-for t in soup.find_all('p'):
-    print (t.get_text() + '\n')
+# View the tbody tag of the soup object
+table = soup.find('p')
+
+# Print all the links on a page to the Terminal
+for link in soup.find_all('a'):
+    print(link.get('href'))
+
+# Print all the paragraphs on a page to the Terminal
+for link in soup.find_all('p'):
+    print(link.get('p'))
