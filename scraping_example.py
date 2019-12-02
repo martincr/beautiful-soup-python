@@ -15,8 +15,9 @@ soup = BeautifulSoup(data, "html5lib")
 print ('Started.')
 
 for link in soup.find_all('a'):
-    print (link.get('href'))
-    print (link.text)
+    print (link.get('href').strip())
+    print ('\t')
+    print ((link.text).strip())
 
 # for link in soup.find_all('p'):
 #    print(link.get('p'))
