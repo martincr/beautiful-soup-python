@@ -14,24 +14,24 @@ soup = BeautifulSoup(r, 'html5lib')
 
 # print (soup.find_all('p'))
 
-#soup.find_all(class_="entry")
+# soup.find_all(class_="entry")
 
-#print (soup.select("entry"))
+# print (soup.select("entry"))
 
 # Prints all the paragraphs
-#print (soup.find_all("p"))
+# print (soup.find_all("p"))
 
-#soup.select_one(".entry")
+# soup.select_one(".entry")
 
-#print(soup.prettify())
+# print(soup.prettify())
 
-#print (soup.find_all("p"))
+# print (soup.find_all("p"))
 
-#for paragraph in soup.find_all('.entry'):
+# for paragraph in soup.find_all('.entry'):
 #    print(paragraph.get('p'))
 
 # Extracting all the text from a page
-#print(soup.get_text())
+# print(soup.get_text())
 
 # print (soup.find_all("h2"))
 
@@ -42,9 +42,9 @@ paragraph_text = body_text.find_all("p")
 
 print(paragraph_text)
 
-#for link in soup.find_all(class_="entry"):
+# for link in soup.find_all(class_="entry"):
 #    print(link.get_text())
 
-#body_text = soup.find(class_="entry")
+# body_text = soup.find(class_="entry")
 
-#print (body_text)
+# print (body_text)

@@ -1,6 +1,8 @@
 # python3 -m pip install beautifulsoup4
 # python3 -m pip install requests
 
+# pip3 install html5lib
+
 import os
 import requests
 from bs4 import BeautifulSoup
