@@ -22,4 +22,10 @@ for link in soup.find_all('a'):
 # for link in soup.find_all('p'):
 #    print(link.get('p'))
 
+# Get the page title from the head section
+#for title in soup.find_all('title'):
+head_tag = soup.head
+title_tag = head_tag.contents[0]
+print ((title_tag.contents))
+
 print ('Finished.')
